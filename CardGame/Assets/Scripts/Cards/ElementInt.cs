@@ -4,10 +4,8 @@ using UnityEngine;
 
 namespace Cards
 {
-    public abstract class Element : ScriptableObject
+    [CreateAssetMenu(menuName = "Elements/Int")]
+    public class ElementInt : Element
     {
-
-
     }
 }
-

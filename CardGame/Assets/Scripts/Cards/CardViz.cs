@@ -1,21 +1,16 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using System.Collections.Generic;
 
 namespace Cards
 {
-    public class CardViz : MonoBehaviour
+    public class CardViz : MonoBehaviour //Card Visualization
     {
-        public Text title;
-        public Text level;
-        public Text cardDetail;
-        public Text secondaryText;
-        public Text treasures;
-        public Image art;
-        public Image background;
-        public Image template;
 
         public Card card;
+        public CardVizProperties[] properties;
+        public Dictionary <Element, CardVizProperties> cardsProperties = new Dictionary<Element, CardVizProperties>();
 
         private void Start()
         {
@@ -28,38 +23,46 @@ namespace Cards
                 return;
 
             card = c;
-            title.text = c.title;
-            art.sprite = c.art;
-            cardDetail.text = c.cardDetail;
-            background.sprite = c.background;
-            template.sprite = c.template;
 
-            if (string.IsNullOrEmpty(c.level))
+            for (int i = 0; i < c.properties.Length; i++)
             {
-                level.gameObject.SetActive(false);
+                CardProperties cp = c.properties[i];
+
+                CardVizProperties p = GetProperty(cp.element);
+
+                if (p == null)
+                    continue;
+
+                if (cp.element is ElementInt)
+                {
+                    p.text.text = cp.intValue.ToString();
+                }
+                else if (cp.element is ElementText)
+                {
+                    p.text.text = cp.stringValue;
+                }
+                else if (cp.element is ElementImage)
+                {
+                    p.image.sprite = cp.sprite;
+                }
             }
-            else
+           
+        }
+
+        public CardVizProperties GetProperty(Element e)
+        {
+            CardVizProperties result = null;
+
+            for (int i = 0; i < properties.Length; i++) // TODO: Dictionary
             {
-                level.gameObject.SetActive(true);
-                level.text = c.level;
+                if(properties[i].element == e)
+                {
+                    result = properties[i];
+                    break;
+                }
             }
-            if (string.IsNullOrEmpty(c.secondaryText))
-            {
-                secondaryText.gameObject.SetActive(false);
-            } else
-            {
-                secondaryText.gameObject.SetActive(true);
-                secondaryText.text = c.secondaryText;
-            }
-            if (string.IsNullOrEmpty(c.treasures))
-            {
-                treasures.gameObject.SetActive(false);
-            }
-            else
-            {
-                treasures.gameObject.SetActive(true);
-                treasures.text = c.treasures;
-            }
+
+            return result;
         }
     }
 }
