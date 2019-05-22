@@ -10,34 +10,34 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 01279fba2fc1198468c6f63189405e6d, type: 3}
-  m_Name: Wannabe Cactus
+  m_Name: Wannabe Ditto
   m_EditorClassIdentifier: 
   properties:
-  - stringValue: Wannabe Cactus
+  - stringValue: Wannabe Ditto
     intValue: 0
     sprite: {fileID: 0}
     element: {fileID: 11400000, guid: 00a4054d8aac2c34e8afd37396b2799c, type: 2}
-  - stringValue: Level
-    intValue: 12
+  - stringValue: 
+    intValue: 20
     sprite: {fileID: 0}
     element: {fileID: 11400000, guid: 9f957f9d469985745909506a9f12c760, type: 2}
-  - stringValue: I'll kill you
+  - stringValue: Sometimes su Sometimes Ditto
     intValue: 0
     sprite: {fileID: 0}
     element: {fileID: 11400000, guid: 0f63e5f18b9b181479e19b176d81e83c, type: 2}
   - stringValue: 
     intValue: 0
-    sprite: {fileID: 21300000, guid: 79b26f3d08f6b09418091dec34cf127d, type: 3}
+    sprite: {fileID: 21300000, guid: e57ca7629cbcac44796b0ae2ebe4249b, type: 3}
     element: {fileID: 11400000, guid: 0a36c165a77704d4b8657456b4bdddc6, type: 2}
-  - stringValue: DIEEE
+  - stringValue: I wanna Die
     intValue: 0
     sprite: {fileID: 0}
     element: {fileID: 11400000, guid: 18caaae5af41480448a07d3a013a267f, type: 2}
-  - stringValue: Boss
+  - stringValue: Human
     intValue: 0
     sprite: {fileID: 0}
     element: {fileID: 11400000, guid: 3974f545333b66c4280bcf5ab4886a11, type: 2}
   - stringValue: 
-    intValue: 3
+    intValue: 0
     sprite: {fileID: 0}
     element: {fileID: 11400000, guid: 44f0e34258b6e12488a3c6634d4d1e0b, type: 2}
