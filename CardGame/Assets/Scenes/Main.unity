@@ -371,6 +371,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1365185065}
     m_Modifications:
+    - target: {fileID: 1433571336977504, guid: 3854bac74fb9ae149aa0adb516129a5f, type: 3}
+      propertyPath: m_Name
+      value: Card
+      objectReference: {fileID: 0}
     - target: {fileID: 224271510566698158, guid: 3854bac74fb9ae149aa0adb516129a5f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -409,6 +413,21 @@ PrefabInstance:
     - target: {fileID: 224271510566698158, guid: 3854bac74fb9ae149aa0adb516129a5f,
         type: 3}
       propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224271510566698158, guid: 3854bac74fb9ae149aa0adb516129a5f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224271510566698158, guid: 3854bac74fb9ae149aa0adb516129a5f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224271510566698158, guid: 3854bac74fb9ae149aa0adb516129a5f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224271510566698158, guid: 3854bac74fb9ae149aa0adb516129a5f,
@@ -3717,6 +3736,16 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 224642372412837610, guid: 3854bac74fb9ae149aa0adb516129a5f,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 30.744
+      objectReference: {fileID: 0}
+    - target: {fileID: 224642372412837610, guid: 3854bac74fb9ae149aa0adb516129a5f,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -127.7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3854bac74fb9ae149aa0adb516129a5f, type: 3}
 --- !u!224 &1386825196 stripped
@@ -5388,6 +5417,12 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114279878815594726, guid: 3854bac74fb9ae149aa0adb516129a5f,
+        type: 3}
+      propertyPath: card
+      value: 
+      objectReference: {fileID: 11400000, guid: daef1894900bdbb47803e109f032ca9e,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3854bac74fb9ae149aa0adb516129a5f, type: 3}
 --- !u!224 &2057436419 stripped

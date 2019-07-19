@@ -12,12 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01279fba2fc1198468c6f63189405e6d, type: 3}
   m_Name: Wannabe Ditto
   m_EditorClassIdentifier: 
+  cardType: {fileID: 11400000, guid: d310f22fb0ad6d949b2e5913fdcab009, type: 2}
   properties:
   - stringValue: Wannabe Ditto
     intValue: 0
     sprite: {fileID: 0}
     element: {fileID: 11400000, guid: 00a4054d8aac2c34e8afd37396b2799c, type: 2}
-  - stringValue: 
+  - stringValue: Level
     intValue: 20
     sprite: {fileID: 0}
     element: {fileID: 11400000, guid: 9f957f9d469985745909506a9f12c760, type: 2}
@@ -38,6 +39,6 @@ MonoBehaviour:
     sprite: {fileID: 0}
     element: {fileID: 11400000, guid: 3974f545333b66c4280bcf5ab4886a11, type: 2}
   - stringValue: 
-    intValue: 0
+    intValue: 10
     sprite: {fileID: 0}
     element: {fileID: 11400000, guid: 44f0e34258b6e12488a3c6634d4d1e0b, type: 2}

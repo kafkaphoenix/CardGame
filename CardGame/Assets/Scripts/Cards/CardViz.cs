@@ -11,6 +11,7 @@ namespace Cards
         public Card card;
         public CardVizProperties[] properties;
         public Dictionary <Element, CardVizProperties> cardsProperties = new Dictionary<Element, CardVizProperties>();
+        public GameObject statsHolder;
 
         private void Start()
         {
@@ -23,6 +24,8 @@ namespace Cards
                 return;
 
             card = c;
+
+            c.cardType.OnSetType(this);
 
             for (int i = 0; i < c.properties.Length; i++)
             {

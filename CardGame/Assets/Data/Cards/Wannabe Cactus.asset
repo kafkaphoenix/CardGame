@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01279fba2fc1198468c6f63189405e6d, type: 3}
   m_Name: Wannabe Cactus
   m_EditorClassIdentifier: 
+  cardType: {fileID: 11400000, guid: 8ac6ef9d26f9c3c4b9fdca950e000dcb, type: 2}
   properties:
   - stringValue: Wannabe Cactus
     intValue: 0
@@ -41,3 +42,7 @@ MonoBehaviour:
     intValue: 3
     sprite: {fileID: 0}
     element: {fileID: 11400000, guid: 44f0e34258b6e12488a3c6634d4d1e0b, type: 2}
+  - stringValue: 3/4
+    intValue: 0
+    sprite: {fileID: 0}
+    element: {fileID: 11400000, guid: de4ab5564ad743b4588854392e5c4082, type: 2}
