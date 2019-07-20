@@ -1,21 +1,18 @@
-﻿using UnityEngine;
-using System.Collections;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using Cards.GameStates;
 
 namespace Cards
 {
-    public static class GameManager
+    public class GameManager : MonoBehaviour
     {
-        //this way can exhaust your memory with a lot of data
-        private static ResourcesManager _resourcesManager;
+        public State currentState; 
 
-        public static ResourcesManager getResourcesManager()
+        private void Update()
         {
-            if (_resourcesManager == null)
-            {
-                _resourcesManager = Resources.Load("ResourcesManager") as ResourcesManager;
-            }
-
-            return _resourcesManager;
+            currentState.Tick(Time.deltaTime);
         }
     }
+
 }
