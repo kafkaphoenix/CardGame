@@ -26,7 +26,7 @@ MonoBehaviour:
     intValue: 0
     sprite: {fileID: 0}
     element: {fileID: 11400000, guid: 0f63e5f18b9b181479e19b176d81e83c, type: 2}
-  - stringValue: 
+  - stringValue: Art
     intValue: 0
     sprite: {fileID: 21300000, guid: e57ca7629cbcac44796b0ae2ebe4249b, type: 3}
     element: {fileID: 11400000, guid: 0a36c165a77704d4b8657456b4bdddc6, type: 2}

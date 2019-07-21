@@ -7,15 +7,22 @@ namespace Cards
 {
     public class CardInstance : MonoBehaviour, IClickable
     {
+        public Cards.GameElements.GameElementsLogic currentLogic;
+
         public void onClick()
         {
+            if (currentLogic == null)
+                return;
 
+            currentLogic.onClick(this);
         }
 
         public void onHighlight()
         {
-            Vector3 scale = Vector3.one * 2;
-            this.transform.localScale = scale;
+            if (currentLogic == null)
+                return;
+
+            currentLogic.onHighlight(this);
         }
     }
 

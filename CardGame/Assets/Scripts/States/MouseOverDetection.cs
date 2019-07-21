@@ -10,6 +10,7 @@ namespace Cards.GameStates
     {
         public override void Execute(float deltaTime)
         {
+            // Press mouse button
             PointerEventData pointerData = new PointerEventData(EventSystem.current)
             {
                 position = Input.mousePosition
@@ -18,15 +19,18 @@ namespace Cards.GameStates
             List<RaycastResult> results = new List<RaycastResult>();
             EventSystem.current.RaycastAll(pointerData, results);
 
+            IClickable c = null;
+
             foreach (RaycastResult r in results)
             {
-                IClickable c = r.gameObject.GetComponentInParent<IClickable>();
+                c = r.gameObject.GetComponentInParent<IClickable>();
                 if (c != null)
                 {
                     c.onHighlight();
                     break;
                 }
             }
+            
         }
     }
 
