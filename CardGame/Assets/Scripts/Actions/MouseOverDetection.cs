@@ -8,16 +8,11 @@ namespace Cards.GameStates
     [CreateAssetMenu(menuName = "Actions/MouseOverDetection")]
     public class MouseOverDetection : Action
     {
+        private List<RaycastResult> results;
+
         public override void Execute(float deltaTime)
         {
-            // Press mouse button
-            PointerEventData pointerData = new PointerEventData(EventSystem.current)
-            {
-                position = Input.mousePosition
-            };
-
-            List<RaycastResult> results = new List<RaycastResult>();
-            EventSystem.current.RaycastAll(pointerData, results);
+            results = Settings.GetUIObjects();
 
             IClickable c = null;
 

@@ -7,7 +7,13 @@ namespace Cards
 {
     public class CardInstance : MonoBehaviour, IClickable
     {
+        public CardViz viz;
         public Cards.GameElements.GameElementsLogic currentLogic;
+
+        void Start()
+        {
+            viz = GetComponent<CardViz>();
+        }
 
         public void onClick()
         {
