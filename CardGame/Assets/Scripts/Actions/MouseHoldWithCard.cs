@@ -8,6 +8,7 @@ namespace Cards.GameStates
     [CreateAssetMenu(menuName = "Actions/MouseHoldWithCard")]
     public class MouseHoldWithCard : Action
     {
+        public CardVariable currentCard;
         public State playerControlState;
         public SO.GameEvent onPlayerControlState;
 
@@ -21,8 +22,16 @@ namespace Cards.GameStates
 
                 foreach (RaycastResult r in results)
                 {
-                    //check for dropable areas
+                    IDroppableArea a = r.gameObject.GetComponentInParent<IDroppableArea>();
+                    if (a != null)
+                    {
+                        a.OnDrop();
+                        break;
+                    }
                 }
+
+                currentCard.instance.gameObject.SetActive(true);
+                currentCard.instance = null;
 
                 Settings.gameManager.SetState(playerControlState);
                 onPlayerControlState.Raise();
