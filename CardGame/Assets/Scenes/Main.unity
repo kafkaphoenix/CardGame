@@ -2441,7 +2441,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 965716121}
-        m_MethodName: closeCard
+        m_MethodName: CloseCard
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

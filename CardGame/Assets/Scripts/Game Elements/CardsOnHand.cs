@@ -13,8 +13,8 @@ namespace Cards.GameElements
 
         public override void onClick(CardInstance instance)
         {
-            currentCard.set(instance);
-            Settings.gameManager.setState(holdingCard);
+            currentCard.Set(instance);
+            Settings.gameManager.SetState(holdingCard);
             onCurrentCardSelected.Raise();
         }
 

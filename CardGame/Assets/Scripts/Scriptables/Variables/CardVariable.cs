@@ -9,7 +9,7 @@ namespace Cards
     {
         public CardInstance instance;
 
-        public void set(CardInstance v)
+        public void Set(CardInstance v)
         {
             instance = v;
         }

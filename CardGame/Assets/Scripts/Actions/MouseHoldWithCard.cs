@@ -11,22 +11,21 @@ namespace Cards.GameStates
         public State playerControlState;
         public SO.GameEvent onPlayerControlState;
 
-        private List<RaycastResult> results;
-
         public override void Execute(float deltaTime)
         {
             bool mouseIsDown = Input.GetMouseButton(0);
-
+            
             if (!mouseIsDown)
             {
-                results = Settings.GetUIObjects();
+                List<RaycastResult> results = Settings.GetUIObjects();
 
-                foreach(RaycastResult r in results)
+                foreach (RaycastResult r in results)
                 {
                     //check for dropable areas
                 }
 
-                Settings.gameManager.setState(playerControlState);
+                Settings.gameManager.SetState(playerControlState);
+                onPlayerControlState.Raise();
                 return;
             }
         }

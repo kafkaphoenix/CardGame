@@ -8,13 +8,12 @@ namespace Cards.GameStates
     [CreateAssetMenu(menuName = "Actions/OnMouseClick")]
     public class OnMouseClick : Action
     {
-        private List<RaycastResult> results;
 
         public override void Execute(float deltaTime)
         {
             if (Input.GetMouseButtonDown(0))
             {
-                results = Settings.GetUIObjects();
+                List<RaycastResult> results = Settings.GetUIObjects();
 
                 IClickable c = null;
 

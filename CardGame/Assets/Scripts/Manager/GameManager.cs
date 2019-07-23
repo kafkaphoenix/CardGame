@@ -19,7 +19,7 @@ namespace Cards
             currentState.Tick(Time.deltaTime);
         }
 
-        public void setState(State state)
+        public void SetState(State state)
         {
             currentState = state;
         }
