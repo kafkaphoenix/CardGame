@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe0d9e7c0042c0745b7bd9973bdb7416, type: 3}
+  m_Name: Player1
+  m_EditorClassIdentifier: 
+  startingCards:
+  - Wannabe Ditto
+  - Wannabe Ditto
+  - Wannabe Cactus
+  handGrid: {fileID: 11400000, guid: 0f4d9c5290dbe344488c68e60a69d3dc, type: 2}
+  downGrid: {fileID: 11400000, guid: a4eaeeb83eaa6ee44a2f17cec155a493, type: 2}
+  handLogic: {fileID: 11400000, guid: edccacd1e70496e4ca982810174f6030, type: 2}
+  downLogic: {fileID: 11400000, guid: 7d45b1c2d92217942832c61fb29310c7, type: 2}

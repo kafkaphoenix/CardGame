@@ -13,11 +13,6 @@ namespace Cards
         public Dictionary <Element, CardVizProperties> cardsProperties = new Dictionary<Element, CardVizProperties>();
         public GameObject statsHolder;
 
-        private void Start()
-        {
-            LoadCard(card);
-        }
-
         public void LoadCard(Card c)
         {
             if (c == null)

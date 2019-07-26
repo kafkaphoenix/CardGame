@@ -19,10 +19,7 @@ namespace Cards
 
             if (card.instance.viz.card.cardType == creatureType)
             {
-                card.instance.transform.SetParent(areaGrid.value.transform );
-                card.instance.transform.localPosition = Vector3.zero;
-                card.instance.transform.localScale = Vector3.one;
-                card.instance.transform.localEulerAngles = Vector3.zero;
+                Settings.SetParentForCard(card.instance.transform, areaGrid.value.transform);
                 card.instance.gameObject.SetActive(true);
                 card.instance.currentLogic = cardDownLogic;
 
